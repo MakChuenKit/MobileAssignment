@@ -8,7 +8,7 @@ export default function App() {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch('http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=3c3e2a7d2f73d67a8428498a4aa0389b')
+    fetch('/*Put Your API here*/')
       .then((response) => response.json())
       .then((json) => setData(json.city))
       .catch((error) => console.error(error))
